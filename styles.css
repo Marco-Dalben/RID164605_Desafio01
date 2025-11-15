@@ -1,0 +1,496 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  height: 90rem;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.head-container {
+  margin: 0;
+  color: #fff;
+  width: 100vw;
+  height: 4.37rem;
+  padding-top: 0.81rem;
+  padding-bottom: 0.81rem;
+  padding-left: 9.75rem;
+  background: #02A28F;
+}
+
+.head-container h1 {
+  font-size: 2.25rem;
+  width: 16.8rem;
+  height: 2.75rem;
+  padding-top: 0.8rem;
+  margin: 0;
+
+}
+
+.container {
+  margin-left: 9.75rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.emphasis {
+  color: #FFFFFF;
+  width: 46.5rem;
+  height: 24.7rem;
+  margin-top: 3.12rem;
+  border-radius: 0.6rem;
+  background-image:
+    linear-gradient(180deg, #66666600 30%, #000000 100%),
+    url(./Assets/City.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.emphasis h1 {
+  width: 3.7rem;
+  height: 1.2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-top: 18.1rem;
+  padding-left: 1.5rem;
+  margin: 0;
+}
+
+.emphasis h2 {
+  width: 31.8rem;
+  height: 2.4rem;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 2rem;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.emphasis h3 {
+  width: 8.12rem;
+  height: 1.25rem;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 1rem;
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.recent-posts-container {
+  margin-top: 1.5rem;
+  width: 46.5rem;
+  grid-column: 1;
+}
+
+#recent-posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #02A28F;
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.62rem 0.62rem 0rem #0000001A;
+  padding: 1rem 1.5rem;
+}
+
+#recent-posts-header h1 {
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+#recent-posts-header a {
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+#recent-posts-header a:hover {
+  opacity: 0.7;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 0.62rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.37rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 12.5rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content .category {
+  color: #02A28F;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.card-content h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.card-content h3 {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 0.5rem 0;
+}
+
+.card-content span {
+  font-weight: 600;
+}
+
+.card-content p {
+  font-size: 0.85rem;
+  color: #000000;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.card-content small {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+
+.side-card {
+  margin: 0;
+  margin-top: 3.12rem;
+  margin-right: 9.68rem;
+  width: 360px;
+  height: 48px;
+  top: 120px;
+  border-radius: 10px;
+  padding-right: 24px;
+  padding-left: 24px;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.side-card-box {
+  width: 22.5rem;
+  height: 6rem;
+  font-size: 1.25rem;
+  background: #fff;
+  border-radius: 0.62rem;
+  box-shadow: 0rem 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-bottom: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.side-card h3 {
+  background: #00a884;
+  color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  margin: 0;
+  display: flex
+}
+
+.popular {
+  padding-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  padding-left: 0.75rem;
+}
+
+.popular p {
+  font-size: 0.87rem;
+  padding-left: 0.75rem;
+}
+
+.popular small {
+  font-size: 0.75rem;
+  padding-left: 0.75rem;
+  color: #999;
+}
+
+#categories-ul {
+  list-style-type: none;
+  width: 22.56rem;
+  margin-top: 1.25rem;
+  padding-top: 0.87rem;
+  height: 11.5rem;
+  font-size: 1rem;
+  font-style: bold;
+  justify-items: space-between;
+  padding-top: 0.87rem;
+  display: grid;
+  color: #616161;
+  margin: 0;
+
+}
+
+.popular img {
+  border-radius: 0.62rem;
+}
+
+#footerContainer {
+
+  margin-top: 4.06rem;
+  color: #fff;
+  width: 100vw;
+  height: 3rem;
+  background: #02A28F;
+}
+
+#footerContainer h1 {
+  font-size: 0.87rem;
+  padding: 1.063rem 39.81rem 0 39.81rem;
+  font-weight: 600;
+  justify-items: center;
+  margin: 0;
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
+
+@media only screen and (max-width: 767px) {
+
+  body {
+    margin: 0;
+    width: 23rem;
+  }
+
+  .head-container {
+    width: 100vw;
+    gap: 0.62rem;
+    padding: 16px 0;
+
+
+  }
+
+  .head-container h1 {
+    font-size: 1.05rem;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .container {
+    width: 23rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .emphasis {
+    width: 23rem;
+    height: 24.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .emphasis h2 {
+
+    width: 20rem;
+    height: 3.6rem;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 1.25rem;
+    margin: 0;
+    padding-left: 1.5rem;
+    word-break: break-word;
+  }
+
+  .recent-posts-container {
+    margin-top: 1.5rem;
+    width: 23rem;
+    grid-column: 1;
+  }
+
+  #recent-posts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #02A28F;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0.62rem 0.62rem 0rem #0000001A;
+    padding: 1rem 1.5rem;
+  }
+
+  #recent-posts-header h1 {
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  #recent-posts-header a {
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    transition: opacity 0.2s;
+  }
+
+  #recent-posts-header a:hover {
+    opacity: 0.7;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .head-container {
+    padding-left: 1rem;
+    text-align: center;
+    height: auto;
+  }
+
+  .head-container h1 {
+    padding: 0;
+    font-size: 1.8rem;
+  }
+
+  .container {
+    margin-left: 0;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .emphasis {
+    width: 100%;
+    height: 18rem;
+  }
+
+  .emphasis h2 {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+
+  .recent-posts-container {
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .side-card {
+    grid-column: 1;
+    width: 100%;
+    margin-right: 0;
+    padding: 0;
+  }
+
+  .side-card-box {
+    width: 100%;
+  }
+
+  #categories-ul {
+    width: 100%;
+  }
+
+  #footerContainer h1 {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .head-container {
+    padding-left: 2rem;
+  }
+
+  .container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .emphasis {
+    width: 100%;
+    height: 22rem;
+  }
+
+  .recent-posts-container {
+    width: 100%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .side-card {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .side-card-box {
+    width: 100%;
+  }
+
+  #categories-ul {
+    width: 100%;
+  }
+
+  #footerContainer h1 {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container {
+    margin-left: 9.75rem;
+  }
+
+  #footerContainer h1 {
+    padding: 1.063rem 0;
+    text-align: center;
+  }
+}
+
