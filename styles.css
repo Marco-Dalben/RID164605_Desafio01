@@ -1,12 +1,15 @@
 html {
   font-family: "Montserrat", sans-serif;
-  width: 100vw;
-  height: 90rem;
+  width: 100%;
+  min-height: 100%;
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .head-container {
@@ -23,85 +26,75 @@ body {
 .head-container h1 {
   font-size: 2.25rem;
   width: 16.8rem;
-  height: 2.75rem;
+  min-height: 2.75rem;
   padding-top: 0.8rem;
   margin: 0;
 
 }
 
+main {
+  flex: 1;
+}
+
 .container {
-  margin-left: 9.75rem;
+  max-width: 46.6rem;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-content: center;
-  align-content: center;
+  gap: 1.5rem;
+  align-items: start;
 }
 
 .emphasis {
   color: #FFFFFF;
-  width: 46.5rem;
-  height: 24.7rem;
+  width: 100%;
+  min-height: 24.75rem;
   margin-top: 3.12rem;
-  border-radius: 0.6rem;
+  border-radius: 10px;
   background-image:
-    linear-gradient(180deg, #66666600 30%, #000000 100%),
+    linear-gradient(180deg, #00000000 30%, #000000 100%),
     url(./Assets/City.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.25rem;
 }
 
 .emphasis h1 {
-  width: 3.7rem;
-  height: 1.2rem;
+  font-size: 0.9rem;
   font-weight: 400;
-  font-size: 1rem;
-  line-height: 100%;
-  letter-spacing: 0%;
-  padding-top: 18.1rem;
-  padding-left: 1.5rem;
-  margin: 0;
+  margin: 0 0 0.3rem 0;
 }
 
 .emphasis h2 {
-  width: 31.8rem;
-  height: 2.4rem;
-  font-weight: 700;
-  font-style: Bold;
   font-size: 2rem;
-  margin: 0;
-  padding-left: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.2rem 0;
 }
 
 .emphasis h3 {
-  width: 8.12rem;
-  height: 1.25rem;
-  font-weight: 700;
-  font-style: Bold;
   font-size: 1rem;
-  font-family: 'Montserrat';
   font-weight: 500;
-  font-style: Medium;
-  font-size: 1rem;
   margin: 0;
-  padding-left: 1.5rem;
 }
 
+
 .recent-posts-container {
-  margin-top: 1.5rem;
   width: 46.5rem;
-  grid-column: 1;
 }
 
 #recent-posts-header {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   background: #02A28F;
-  border-radius: 0.5rem;
-  box-shadow: 0rem 0.62rem 0.62rem 0rem #0000001A;
-  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.06);
+  padding: 0.75rem 1rem;
 }
 
 #recent-posts-header h1 {
@@ -192,29 +185,27 @@ body {
 
 
 .side-card {
-  margin: 0;
-  margin-top: 3.12rem;
-  margin-right: 9.68rem;
-  width: 360px;
-  height: 48px;
+  margin-top: 3.125rem;
+  max-width: 23rem;
   top: 120px;
   border-radius: 10px;
   padding-right: 24px;
   padding-left: 24px;
   grid-column: 2;
   grid-row: 1;
+  gap: 0.625rem;
 }
 
 .side-card-box {
-  width: 22.5rem;
-  height: 6rem;
+  max-width: 22.5rem;
+  min-height: 6rem;
   font-size: 1.25rem;
   background: #fff;
-  border-radius: 0.62rem;
+  border-radius: 10px;
   box-shadow: 0rem 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.2s, box-shadow 0.2s;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   margin-top: 1.25rem;
 }
 
@@ -228,7 +219,7 @@ body {
 }
 
 .popular {
-  padding-top: 1.25rem;
+  padding-top: 1.10rem;
   display: flex;
   align-items: center;
   padding-bottom: 1.5rem;
@@ -246,12 +237,14 @@ body {
   color: #999;
 }
 
+#categories{
+  max-width: 22.56rem;
+  min-height: 11.5rem;
+  padding-top: 0.4rem;
+}
+
 #categories-ul {
   list-style-type: none;
-  width: 22.56rem;
-  margin-top: 1.25rem;
-  padding-top: 0.87rem;
-  height: 11.5rem;
   font-size: 1rem;
   font-style: bold;
   justify-items: space-between;
@@ -267,30 +260,25 @@ body {
 }
 
 #footerContainer {
-
-  margin-top: 4.06rem;
-  color: #fff;
-  width: 100vw;
-  height: 3rem;
+  width: 100%;
   background: #02A28F;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 #footerContainer h1 {
-  font-size: 0.87rem;
-  padding: 1.063rem 39.81rem 0 39.81rem;
-  font-weight: 600;
-  justify-items: center;
   margin: 0;
-
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0;
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1023px) {}
 
 @media only screen and (max-width: 767px) {
 
   body {
     margin: 0;
-    width: 23rem;
   }
 
   .head-container {
@@ -302,7 +290,7 @@ body {
   }
 
   .head-container h1 {
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 16px 0;
   }
@@ -316,21 +304,8 @@ body {
   }
 
   .emphasis {
-    width: 23rem;
-    height: 24.75rem;
-    margin-top: 1.5rem;
-  }
-
-  .emphasis h2 {
-
-    width: 20rem;
-    height: 3.6rem;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 1.25rem;
-    margin: 0;
-    padding-left: 1.5rem;
-    word-break: break-word;
+    width: 100%;
+    height: 22rem;
   }
 
   .recent-posts-container {
@@ -377,65 +352,29 @@ body {
     margin-top: 1.5rem;
   }
 
+  #footerContainer {
+  width: 100%;
+  background: #02A28F;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+
 }
 
-@media (max-width: 767px) {
-
-  .head-container {
-    padding-left: 1rem;
-    text-align: center;
-    height: auto;
-  }
-
-  .head-container h1 {
-    padding: 0;
-    font-size: 1.8rem;
-  }
-
-  .container {
-    margin-left: 0;
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .emphasis {
-    width: 100%;
-    height: 18rem;
-  }
-
-  .emphasis h2 {
-    width: 90%;
-    font-size: 1.5rem;
-  }
-
-  .recent-posts-container {
-    width: 100%;
-  }
-
-  .cards {
-    grid-template-columns: 1fr;
-  }
-
-  .side-card {
-    grid-column: 1;
-    width: 100%;
-    margin-right: 0;
-    padding: 0;
-  }
-
-  .side-card-box {
-    width: 100%;
-  }
-
-  #categories-ul {
-    width: 100%;
-  }
-
-  #footerContainer h1 {
-    padding: 0;
-    text-align: center;
-  }
+#footerContainer h1 {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
+
+}
+
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -457,7 +396,15 @@ body {
   }
 
   .recent-posts-container {
+    width: 26rem;
+  }
+
+  .recent-posts-header {
     width: 100%;
+  }
+
+  .card {
+    width: 13.2rem;
   }
 
   .cards {
@@ -467,6 +414,7 @@ body {
   .side-card {
     width: 100%;
     margin-right: 0;
+
   }
 
   .side-card-box {
@@ -486,11 +434,23 @@ body {
 @media (min-width: 1025px) {
   .container {
     margin-left: 9.75rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    align-items: start;
+    gap: 2rem; 
+
   }
 
   #footerContainer h1 {
     padding: 1.063rem 0;
     text-align: center;
   }
-}
 
+  .container {
+    margin-left: 9.75rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    align-items: start;
+    gap: 2rem; 
+  }
+}
